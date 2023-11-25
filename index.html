@@ -1,0 +1,229 @@
+<!--  Comment the line  -> Ctrl + /
+      Structure of HTML ->Shift+1+Enter
+
+      Syntax for HTML element
+      Opening Tag                           Closing Tag
+      <tagName attrName="attrValue">Content </tagName>
+
+      Entire HTML element is made up of tage and attribute
+
+      h1,h2,h3,h4,h5,h6->Heading
+      p->paragraph
+      b->bold
+      i->italic
+      u->underline
+      sup->superscript[text will available above the baseline of the normal text]
+      sub->subscript[text will be available below the baseline of the normal text]
+
+      Void element/empty tags/Self-closing tag
+      br->break the line
+      hr->generate a hozitonal in the webpage
+
+      big->increase the font size by 1
+      small->decrease the font size by 1
+
+      code->change the font size
+      del->it will have a line through over the text
+      cite->non blocking tag with italic styling ->same line
+      address->blocking tag with italic styling->new line
+
+      abbr->Abbriation->non blocking tag->same line
+
+      List in HTML
+
+      ol->Numbered list[type= 1 | A | a | I | i ][start=numbers]
+      ul->Bulleted list[type= disc | circle | square]
+      li->list item
+
+      dl->definition list
+      dt->definition term
+      dd->data definiton
+      
+      a- Anchor tag[Navigate from one page to another]
+      Attributes:href="URL" target=_blank[new tab] | _self[same frame]
+      1.Text link
+      2.Image link
+      img-Image[src="imagePath" alt="AlternateText" height="" width=""]
+      open google ->search photo->touble click photo-> open in newtab
+
+      Table tag
+      table[borger= 0 | 1][bordercolor=""][bgcolor=""][height="" width=""]
+      [cellpadding=""(space between the border of the cell and content of the cell)]
+      [cellspacing=""(space between two cells)]
+      caption tag
+      tr-table room
+      td-table data
+      th-table heading
+
+      form
+          label
+          Single Line input
+          input
+               Attributes
+                 1.Text
+                 2.number
+                 3.password
+                 4.tel
+                 5.url
+                 6.email
+                 7.search
+                 8.checkbox
+                 9.radio->name attributr is must for radio button->Male,Female
+                 10.button
+                 11.submit
+                 12.reset->clear the form
+                 13.file
+                 14.range
+                 15.color
+                 16.date
+                 17.week
+                 18.month
+                 19.datetime-locale
+                 20.time
+                 
+                 
+        Mutli line input
+                 textarea
+                   1.rows->height of the textarea
+                   2.cols->width of the textarea
+        
+        Dropdown
+            select
+                option
+
+            
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    <h3>Hello</h3>
+    <h4>Hello</h4>
+    <h5>Hello</h5>
+    <h6>Hello</h6>
+    <p>Hello</p>
+    <hr>
+    <p><b>Hello</b></p>
+    <p><i>Hello</i></p>
+    <p><u>Hello</u></p>
+    <hr>
+    <p>(a+b)2</p>
+    <p>(a+b)<sup>2</sup></p>
+    <p>H20</p>
+    <p>H<sub>2</sub>0</p>
+    <hr>
+    <p>Hello,<br/>
+        I am Gomathi
+    </p>
+    <p>program</p>
+    <hr>
+    <p>This is a <big> BIG</big> text</p>
+    <p>This is a <small> SMALL</small> text</p>
+    <hr>
+    <p>This is a<code> code</code> text</p>
+    <p>This is a<del> del</del> text</p>
+    <p>This is a<cite> cite</cite> text</p>
+    <p>This is a<address> address</address> text</p>
+    <hr>
+    <abbr title="Hyper Text Transfer Protocal">HTTP</abbr>
+    <br/>
+    <abbr title="Uniform Resource Locator">URL</abbr>
+    <hr>
+    <ol>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ol>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+    <hr>
+    <ol type="A">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ol>
+    <hr>
+    <ol type="i" start="4">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ol>
+    <hr>
+    <ul type="circle">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+    <hr>
+    <dl>
+        <dt>What is HTML?</dt>
+        <dd>HTML stands for..</dd>
+    </dl>
+    <hr>
+
+    <h1>Text URL</h1>
+
+    <a href="https://www.ethnus.com" target="_blank">Ethnus</a>
+    <br/>
+    <a href="https://www.flipkart.com" target="_self">Flipkart</a>
+    <br/>
+    <a href="https://www.thesprucepets.com/meet-the-arabian-horse-1886131">horse</a>
+    <hr>
+
+    <h1>Image URL</h1>
+    <a href="https://www.myntra.com">
+    <img title="rose" src="https://as1.ftcdn.net/v2/jpg/00/77/65/54/1000_F_77655462_BT2963o4KoACUwJSkKmHUpFvXkMHSdqU.jpg" height="200" width="200"/>
+    </a>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDARNWbMngduLMQ6TaB0QY375NQZVmkqaZbAGlKL1qVg&s"/>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIkR_eJeAIjSxzuPKiy1XoLK-Ftwy5pb28T1-AXxpDmQ&s"/>
+    <hr>
+
+    <table border="1" bordercolor="green" bgcolor="blue" cellpadding="10" cellspacing="20">
+        <caption>Table title</caption>
+        <tr>
+            <td>Gomathi</td>
+            <td>murali</td>
+        </tr>
+        <tr>
+            <td>kow</td>
+            <td>seeni</td>
+        </tr>
+    </table>
+    <hr>
+    <form>
+        <label>User Name</label>
+        <input type="text">
+        <label>Age</label>
+        <input type="number">
+        <label>Password</label>
+        <input type="Password">
+        <label>Mobile number</label>
+        <input type="tel">
+        <label>Describe the query</label>
+        <textarea></textarea>
+        <label>Choose the country</label>
+        <select>
+            <option>--Select--</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+        </select>
+        
+        <label>Gender</label>
+        <input type="radio" name="gen">Male
+        <input type="radio" name="gen">Female
+    </form>
+    <hr>
+
+</body>
+</html>
